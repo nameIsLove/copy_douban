@@ -1,0 +1,1206 @@
+@import 'reset.css';
+@import 'common.css';
+
+
+/* 尺寸乘以0.75 */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:active{
+    background-color: #ff9933;
+    color: #fff;
+}
+/* 头部 */
+
+header {
+    width: 1080px;
+    /* width: 95%; */
+    height: 39px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+header .title{
+    width: 18%;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+header .title h1 a {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(46, 150, 61);
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+header .title div{
+    position: absolute;
+    top: 7px;
+    left: 51px;
+}
+
+header .title div span{
+    float: left;
+    vertical-align: bottom;
+}
+
+header .title div span:nth-of-type(3n-2){
+    color: rgb(46, 150, 61);
+    font-size: 24px;
+}
+header .title div span:nth-of-type(3n-1){
+    color: rgb(36, 150, 205);
+    font-size: 24px;
+}
+header .title div span:nth-of-type(3n-3){
+    color: rgb(247, 197, 142);
+    font-size: 24px;
+}
+header .search{
+    position: relative;
+    color: #c3c3c3;
+}
+header .search input[type='text']{
+    font-size: 13px;
+    position: absolute;
+    width: 272px;
+    height: 32px;
+    box-sizing: border-box;
+    top: -33px;
+    left: 166px;
+    border: 1px solid #c3c3c3;
+    outline: #c3c3c3 auto 1px;
+    padding:0 5px;
+}  
+
+header .search span{
+    position: absolute;
+    height: 30px;
+    box-sizing: border-box;
+    top: -22px;
+    left: 411px;
+    color: #c3c3c3;
+}
+header .search span:hover{
+    cursor: pointer;
+}
+header .nav{
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 545px;
+}
+
+header .nav li{
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 5px;
+}
+header .nav li:nth-of-type(2){
+    color: rgb(39, 141, 206);
+}
+header .nav li:nth-of-type(3){
+    color: rgb(243, 128, 3);
+}
+header .nav li:nth-of-type(4){
+    color: rgb(232, 83, 7);
+}
+header .nav li:nth-of-type(5){
+    color: rgb(17, 150, 158);
+}
+header .nav li:nth-of-type(6){
+    color: rgb(56, 158, 172);
+}
+header .nav li:nth-of-type(7){
+    color: rgb(155, 214, 197);
+}
+header .nav li:nth-of-type(8){
+    color: rgb(75, 75, 75);
+}
+header .nav li:nth-of-type(9){
+    color: rgb(71, 138, 65);
+}
+
+
+/* 横幅 */
+.bannercontainer{
+    margin-bottom: 37px;
+}
+.banner{
+    width:50%;
+    height: 305px;
+    background: url(../img/16ad990ec23uwn790d4.jpg) no-repeat rgb(237, 244, 237) 32% 0%/cover;
+    float: left;
+}
+.registerBg{
+    float: right;
+    width: 50%;
+    height: 305px;
+    background-color:rgb(237, 244, 237);
+    box-sizing: border-box;
+}
+
+.registerBg .registerbox{
+    
+    position: relative;
+    text-align: left;
+}
+.registerBg .registerbox .download{
+    display: block;
+    width: 240px;
+    margin-top:105px;
+}
+
+.registerBg .download .doufont{
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.registerBg .download div{
+    position: relative;
+    
+}
+.registerBg .download div button{
+    width: 145px;
+    height: 35px;
+    background-color: rgb(0, 181, 29);
+    color: #fff;
+    border-radius: 3px;
+    border-style: none;
+}
+.registerBg .download div .back{
+    width: 35px;
+    height: 35px;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: -1px;
+    margin-left: 6px;
+    border: 1px solid #48aa0d;
+    border-radius: 3px;
+}
+
+ .registerBg .download div .qrcode{
+    position:relative;
+    border:20px solid #fff;
+    background-color: #fff;
+    padding-bottom: 45px;
+    display: none;
+    width: 200px;
+    height: 230px;
+    float: left;
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    left: 148px;
+    top: -35px;
+}
+.registerBg .download div p{
+    position: absolute;
+    top: 185px;
+    left: 170px;
+    z-index: 1;
+    font-size: 13px;
+    width: 200px;
+    display: none;
+}
+
+.registerBg .download div .back:hover{
+    display: none;
+}
+.registerBg .download div .back:hover~*{
+    display: inline-block;
+    color: #666;
+}
+.registerBg .register{
+    position: absolute;
+    width: 280px;
+    height:305px;
+    float: left;
+    margin-left: 215px;
+    top: -105px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.registerBg .register .picture{
+    float: right;
+}
+.registerBg .register .picture i{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.registerBg .register .picture i{
+    font-size: 13px;
+}
+
+/* 角标换点 */
+
+.registerBg .register .picture i:nth-of-type(1){
+    background: url(./cornershow.png) 46% 10%/32px 32px;
+    display: block;
+    /* display: none; */
+}
+.registerBg .register .picture i:nth-of-type(1)::after{
+    content: "\626B\7801\767B\5F55";
+    width: 65px;
+    height: 28px;
+    background:#f5faf9;
+    border:1px solid #ccedd3;
+    box-sizing: border-box;
+    line-height: 25px;
+    padding-left: 4px;
+    border-radius: 3px;
+    position: relative;
+    border-right: none;
+    right:80px;
+    color: #858585;
+    /* display: inline-block; */
+    display: none;
+}
+.registerBg .register .picture i:nth-of-type(1)::before{
+    content: " ";
+    position: absolute;
+    top: 13px;
+    right: 36px;
+    border: 10px solid transparent;
+    border-left: 10px solid #f5faf9;
+    /* display: inline-block; */
+    display: none;
+}
+.registerBg .register .picture i:nth-of-type(1):hover::after{
+    /* display: none; */
+    display: inline-block;
+}
+.registerBg .register .picture i:nth-of-type(1):hover::before{
+    /* display: none; */
+    display: inline-block;
+}
+
+/* 二维码换点 */
+
+.registerBg .register .picture i:nth-of-type(2){
+    background: url(./corner.png) 46% 10%/32px 32px;
+    /* display: inline-block; */
+    display: none;
+}
+.registerBg .register .picture i:nth-of-type(2)::after{
+    content: "\77ED\4FE1\767B\5F55/\6CE8\518C";
+    width: 100px;
+    height: 28px;
+    background: #f5faf9;
+    border: 1px solid #ccedd3;
+    box-sizing: border-box;
+    line-height: 25px;
+    padding-left: 4px;
+    border-radius: 3px;
+    position: relative;
+    border-right: none;
+    right: 116px;
+    color: #858585;
+    /* display: inline-block; */
+    display: none;
+
+}
+.registerBg .register .picture i:nth-of-type(2)::before{
+    content: " ";
+    position: absolute;
+    top: 13px;
+    right: 36px;
+    border: 10px solid transparent;
+    border-left: 10px solid #f5faf9;
+    /* display: inline-block; */
+    display: none;
+}
+.registerBg .register .picture i:nth-of-type(2):hover::after{
+    /* display: none; */
+    display: inline-block;
+}
+.registerBg .register .picture i:nth-of-type(2):hover::before{
+    /* display: none; */
+    display: inline-block;
+}
+
+.registerBg .register .title{
+    margin-top: 25px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.1);
+}
+.registerBg .register .title.client{
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.registerBg .register img{
+    width: 170px;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 20px auto 10px;
+}
+.registerBg .register .dbalter{
+    position: absolute;
+    width: 183px;
+    height: 25px;
+    line-height: 19px;
+    left: 51px;
+    font-size: 13px;
+    bottom: 23px;
+    border-radius: 12px;
+    padding: 3px 20px;
+    color: #494949;
+    background-color: rgba(0,0,0,.08);
+    text-align: center;
+    box-sizing: border-box;
+}
+.registerBg .register .title p{
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(155, 155, 155);
+    
+}
+.registerBg .register .title p:nth-of-type(1){
+    float: left;
+}
+.registerBg .register .title p:nth-of-type(2){
+    position: absolute;
+    left: 50%;
+    
+}
+.registerBg .register .title p[class='active']{
+    color: #333;
+    border-bottom:1px solid  #494949;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.registerBg .register .userpas  p{
+    color: #9b9b9b;
+    margin:15px 0px;
+    font-size: 12px;
+}
+.registerBg .register .userpas  p a{
+    color: #41ac52;
+    margin-left: 2px;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone{
+    background-color: rgba(250, 252, 250, 0.5);
+    position: absolute;
+    padding: 4px;
+    padding-top: 51px;
+    padding-bottom: 19px;
+    left: -11px;
+    top: -98px;
+    right: -10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div{
+    width: 260px;
+    height: 235px;
+    display: block;
+    position: relative;
+    left: 7px;
+    top: -27px;
+    padding: 10px 15px;
+    background-color: rgba(255, 250, 250);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div p{
+    font-size: 16px;
+    color: #006600;
+    background-color: #ebf5eb;
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div > i{
+    position: absolute;
+    color: #b4b4b4;
+    font-size: 11px;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div > i:hover{
+    color: #f4bfb6;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div ul{
+    overflow: auto;
+    height: 195px;
+    position: relative;
+    margin-right: -16px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div li{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 20px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    height: 38px;
+    line-height: 38px;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div li[class='active']{
+    color: #42bd56;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div li i{
+    margin-left: 10px;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .phone div li i+span{
+    font-weight: normal;
+    float: right;
+}
+
+.registerBg .register .userpas  .centerdiv .onlyrelative{
+    position: relative;
+}
+
+.registerBg .register .userpas  .centerdiv div input{
+    width: 260px;
+    height: 33px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+    outline-style: none;
+    border: 1px solid rgb(228, 230, 229);
+    border-radius: 3px;
+}
+
+
+
+.registerBg .register .userpas  .centerdiv .onlyrelative button[class='num']{
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    border-right: 1px solid #e0e0e0;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    outline-style: none;
+    cursor: pointer;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelative .num+input{
+    padding: 6px 0;
+    padding-left: 50px;
+    
+}
+.registerBg .register .userpas  .centerdiv .onlyrelativetwo input{
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+.registerBg .register .userpas  .centerdiv .onlyrelativetwo a{
+    position: relative;
+    top: -24px;
+    right: 5px;
+    font-size: 13px;
+    color: #41ac52;
+    float: right;
+    cursor: pointer;
+    
+}
+.registerBg .register .userpas  .centerdiv .login{
+    width: 260px;
+    height: 33px;
+    background-color: #97d9a1;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+
+}
+
+
+.registerBg .register .userpas  .centerdiv .phone{
+    position: absolute;
+}
+
+
+.registerBg .register .userpas  .centerdiv .again{
+    display: block;
+    font-size: 13px;
+    height: 15px;
+    margin-bottom: 15px;
+}
+.registerBg .register .userpas  .centerdiv .again input{
+    margin-top: 1px;
+    float: left;
+    width: 13px;
+    height: 13px;
+}
+.registerBg .register .userpas  .centerdiv .again span{
+    float: left;
+}
+.registerBg .register .userpas  .centerdiv .again a{
+    color: #41ac52;
+    float: right;
+}
+
+.registerBg .register .userpas  .otherlogin{
+    position: relative;
+    height: 15px;
+    padding: 15px 0px 0px 0px;
+    border-top: 1px solid #ddd;
+}
+.registerBg .register .userpas  .otherlogin p{
+    
+    margin-top: 3px;
+    float: left;
+}
+.registerBg .register .userpas  .otherlogin i{
+    cursor: pointer;
+    display: inline-block;
+}
+.registerBg .register .userpas  .otherlogin i:nth-of-type(1){
+    margin-left:15px; 
+    display: inline-block;
+    color: #64c574;
+    width: 22px;
+    height: 22px;
+}
+.registerBg .register .userpas  .otherlogin i:nth-of-type(2){
+    margin-left:6px; 
+    color: #f27272;
+    width: 22px;
+    height: 22px;
+}
+.registerBg .register .userpas  .change a{
+    margin-bottom: 15px;
+    float: right;
+}
+.registerBg .register .userpas  .change .centerdiv input[type='text']{
+    padding-left: 10px;
+}
+.registerBg .register .userpas  .change .centerdiv .onlyrelativetwo{
+    margin-bottom: 10px;
+}
+
+/* 内容一行 */
+
+.hotcontent{
+    width: 970px;
+    height: 530px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.hotcontent .title{
+    width: 655px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.hotcontent .hotpicture{
+    width: 370px;
+    height:  400px;
+    float: left;
+    font-size: 12px;
+}
+.hotcontent .hotpicture div{
+    float: left;
+    width: 170px;
+    margin: 0px 12px 14px 0px;
+}
+.hotcontent .hotpicture div img{
+    margin-bottom: 2px;
+    display: block;
+}
+
+.hotcontent .hotpoint{
+    height: 400px;
+    width: 340px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.hotcontent .hotpoint div h5{
+    color: #999;
+}
+.hotcontent .hotpoint div{
+    margin-bottom: 15px;
+}
+.hotcontent .hotpoint div p:nth-of-type(1){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hotcontent .hotpoint div p:nth-of-type(2){
+    color: #666666;
+}
+
+.hotcontent .hotpoint li{
+    margin-bottom: 13px;
+}
+
+
+.hotcontent .advertise{
+    height: 465px;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.hotcontent .advertise img{
+    width: 250px;
+    display: block;
+}
+
+
+/* .hotcontent .advertise .hotsay {
+    font-size: 12px;
+    margin: 10px 0;
+} */
+
+.hotcontent .advertise ul li{
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+    margin-bottom: 15px;
+    
+}
+.hotcontent .advertise ul li a{
+    font-size: 14px;
+}
+.hotcontent .advertise ul li span{
+    display: block;
+    font-size: 13px;
+    margin-top: 5px;
+    color: #c8b2aa;
+}
+
+/* 横幅2 */
+.dbtime{
+    height: 654px;
+    background-color: rgb(247, 247, 247, 0.8);
+    padding: 40px 0 55px 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.dbtime>div{
+    display: block;
+    width: 970px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.dbtime>div>a{
+    font-size: 24px;
+    color: #000;
+    float: left;
+    margin-right: 25px;
+}
+.dbtime>div .content{
+    margin-top: 5px;
+    float: left;
+    text-align:center;
+}
+.dbtime>div .content .db_hot{
+    margin-top: 4px;
+}
+.dbtime>div .content .title{
+    margin-bottom: 15px;
+}
+.dbtime>div .content .timepicture div{
+    width: 100px;
+    height: 230px;
+    float: left;
+    margin:0px 65px 50px 0px
+
+}
+.dbtime>div .content .timepicture img{
+    width: 100px;
+    float: left;
+    margin-bottom: 10px;
+}
+.dbtime>div .content .timepicture div .explain{
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 21px;
+    vertical-align: middle;
+    
+}
+.dbtime>div .content .timepicture div q{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #999;
+    line-height: 20px;
+}
+.dbtime>div .content .timepicture .explain:hover{
+    background-color: #3377aa;
+    color: #fff;
+}
+
+/* movies */
+div.movies.nohavebg{
+    height: 600px;
+    margin-bottom: 35px;
+}
+.movies .content ul{
+    width: 550px;
+}
+.movies .content ul li{
+    width: 100px;
+    height: 230px;
+    float: left;
+    margin:0 35px 40px 0;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+.movies .content ul li img{
+    width: 100px;
+    display: block;
+}
+.movies .content ul li a{
+    color: #000;
+    font-size: 13px;
+}
+.movies .content ul li a:hover{
+    color: #fff;
+}
+.movies .content ul li span{
+    display: block;
+    margin: 3px 0 3px 0;
+    width: 100px 
+}
+.movies .content ul li button{
+    background-color: #1c8bd0;
+    color: #fff;
+    border-radius: 2px;
+    outline-style: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.movies .db_a .rt nav{
+    width: 250px;
+    height: 150px;
+    font-size: 12px;
+    margin-bottom: 38px;
+}
+.movies .db_a .rt nav ul li{
+    width: 46px;
+    display: inline-block;
+    line-height: 1.9;
+}
+.movies .db_a .rt nav ol li{
+    border-bottom: 1px solid #eaeaea;
+    list-style: decimal;
+    line-height: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    /* padding-left: 20px; */
+}
+/* readup */
+.readup{
+    height: 614px;
+    padding: 40px 0 55px 0;
+    box-sizing: border-box;
+}
+.readup .hotgroup ul{
+    width: 550px;
+
+}
+.readup .hotgroup ul li{
+    width: 248px;
+    height: 58px;
+    float: left;
+    margin:0 2px 30px 0;
+}
+.readup .hotgroup ul li img{
+    width: 48px;
+    vertical-align: text-top;
+    float: left;
+    
+}
+.readup .hotgroup ul li a{
+    margin-left: 15px;
+    float: left;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.readup .hotgroup ul li span{
+    margin-left: 15px;
+    width: 170px;
+    float: left;
+    margin-top: 8px;
+    font-size: 12px;
+    color:#999999;
+}
+.readup .rightnav dl{
+    width: 250px;
+}
+.readup div.rightnav dl dd{
+    display: inline-block;
+    width:30px
+}
+.readup div.rightnav dl dt{
+    margin: 5px 0 5px 0;
+}
+.readup div.rightnav dl dt a{
+    font-size: 14px;
+    color:#333333;
+}
+.readup div.rightnav dl dt a:hover{
+    color: #fff;
+}
+.readup  div.rightnav dl dd{
+    margin: 0px;
+    font-size: 12px;
+}
+/* read */
+.read a{
+    color: #000;
+}
+.read .db_a dl>dt>a:hover+.read .db_a dl>dd>a:hover{
+    color: #fff;
+}
+
+.read .db_a dl>a{
+    
+    background-color: #fdfffe;
+    color: #589ab4;
+}
+.read .db_a dl>a:hover{
+    background-color: #fdfffe;
+    color: #589ab4;
+}
+.read .db_a dl dd:last-of-type{
+    margin-bottom: 35px;
+}
+.read .db_a dl>a>i{
+    display: block;
+    background: url(./app_icons_50_10.jpg) top left/650px 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    height: 50px;
+    border-radius: 4px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.read .lt .conton{
+    width:550px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.read .lt .conton li{
+    text-align: center;
+    display: inline-block;
+    font-size: 0px;
+    width:100px;
+    height:222px;
+    margin: 0 28px 30px 0;
+    vertical-align: top;
+}
+.read .lt .conton li img{
+    margin-bottom: 18px;
+    width: 100px;
+}
+.read .lt .conton li a:nth-of-type(2){
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.read .lt .conton li span{
+    margin: 0px 0 10px 0;
+    display: block;
+    font-size: 12px;
+    width: 100px;
+}
+.read .lt ul li button{
+    background-color: #999a95;
+    border-style: none;
+    color: #fff;
+    cursor: pointer;
+}
+.read .lt ul li button:hover{
+    background-color:#878882;
+}
+
+.read div.lt.nav  ul{
+    font-size: 12px;
+    width: 270px;
+    border-bottom: 1px solid #eaeaea;
+}
+.read div.lt.nav  ul span{
+    color: #999999;
+    margin-right: 20px;
+}
+.read div.lt.nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    width: 31px;
+    line-height: 2;
+}
+.read div.lt.nav ul li a{
+    font-size: 12px;
+}
+
+.music{
+    height: 870px;
+    padding: 40px 0 0 0;
+    box-sizing: border-box;
+}
+.music .leftnav dt a{
+    color: #f38c00;
+}
+.music a{
+   color:  #555d53;
+}
+.music .leftnav a:hover{
+    color: #fff;
+}
+.music .leftnav i{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+}
+.music .leftnav i:nth-of-type(1){
+    background: url(./app_icons_50_10.jpg) no-repeat -250px 0%/650px 50px;
+}
+.music .leftnav i:nth-of-type(2){
+    background: url(./app_icons_50_10.jpg) no-repeat -50px 0%/650px 50px;
+}
+.music .content ol,
+.music .content ul{
+    font-size: 12px;
+    width: 520px;
+}
+.music .content ol img{
+    width: 80px;
+    display: block;
+}
+.music .content ol li{
+    padding: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 170px;
+    text-align: center;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+.music .content ol li a{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.music .content ol li span{
+    display: inline-block;
+    width: 55px;
+    height: 10px;
+    background: url(./xing_ic_rating_s@2x.png) no-repeat 18% -1%/49px 97px;
+}
+
+.music .content ul li {
+    padding: 20px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.music .content ul li img{
+    width: 80px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.music .rightnav ol{
+    width: 250px;
+    list-style: decimal;
+}
+.music .rightnav ol li{
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.music .rightnav ol li a{
+    margin-right: 10px;
+}
+.music .rightnav ol li img{
+    
+    font-size: 0px;
+    display: block;
+}
+.music .rightnav ol li p,
+.music .rightnav ol li span{
+    color: #999999;
+}
+
+.doupin h3 a{
+    color: #1f9432;
+    font-size: 24px;
+    margin-right: 70px;
+}
+
+.doupin .content ul{
+    width: 505px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.doupin .content ul li{
+    font-size: 16px;
+    width:245px;
+    display: inline-block;
+    margin-bottom: 30px;
+    
+}
+.doupin .content ul img{
+    width: 240px;
+    display: block;
+}
+.doupin .content ul a:nth-of-type(1){
+    margin-bottom: 10px;
+}
+
+.doupin .content ul a{
+    vertical-align: middle;
+    float: left;
+}
+.doupin .content ul span{
+    color: #e55457;
+    width: 50px;
+    float: right;
+    font-size: 16px;
+    
+}
+
+.doupin .nav>a:nth-of-type(2){
+    display: inline-block;
+    margin:10px 0 40px 0
+}
+.doupin .nav img{
+    width:265px;
+    display: block;
+}
+
+div.tongcheng{
+    height: 320px;
+    padding: 40px;
+    margin-bottom: 30px;
+
+}
+.tongcheng .lt dt a{
+    color: #ec5303;
+}
+.tongcheng .lt a:hover{
+    color: #fff;
+}
+.tongcheng .lt dd a{
+    color: #664433;
+}
+.tongcheng .content ul{
+    text-align: justify;
+    width: 520px;
+}
+.tongcheng .content ul li{
+    vertical-align: top;
+    font-size: 12px;
+    text-align:left;
+    width:250px;
+    display: inline-block;
+    color: #666666;
+    margin-bottom: 50px;
+    line-height: 2;
+}
+.tongcheng .content ul li img{
+    vertical-align: top;
+    float: left;
+    margin-right: 10px;
+}
+.tongcheng .content ul li a{
+    font-size: 13px;
+    color: #664433;
+}
+.tongcheng .content ul li time{
+    display: block;
+}
+.tongcheng .content ul li span{
+    display: block;
+}
+.tongcheng .nav{
+    width:250px;
+    height: 100%;
+}
+.tongcheng .nav .navright ul a:hover{
+    color: #fff;
+}
+.tongcheng .nav .navright ul span {
+    display: block;
+}
+.tongcheng .nav .navright ul span a{
+    font-size: 14px;
+    color: #333;
+}
+.tongcheng .nav .navright ul li {
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+}
+.tongcheng .nav .navright ul li a{
+    font-size: 12px;
+    color: #664433;
+}
+.foot{
+    height: 150px;
+}
+.foot .box{
+    padding: 15px;
+    position: absolute;
+    width: 950px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-top: 1px dashed #dcdcdc;
+    height: 150px;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.foot .box p{
+    color:#999;
+}
+.foot .box .lt,.foot .box .rt{
+    width: 42%;
+}
+.foot .box a{
+    color: #3377aa;
+}
+.foot .box a:hover{
+    color: #fff;
+    background-color: #3377aa;
+}
+.foot .box .rt img{
+    width:150px;
+    display: block;
+    margin-top: 25px;
+}

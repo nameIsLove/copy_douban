@@ -1,0 +1,106 @@
+.lt{
+    float: left;
+}
+.rt{
+    float: right;
+}
+
+.clboth::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.db_hot{
+    font-size: 12px;
+    margin: 10px 0;
+}
+.db_hot h3 {
+    color: #007722;
+    font-size: 15px;
+    float: left;
+}
+.db_hot a{
+    color: #3377aa;
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+}
+.db_hot a:hover{
+        color: #fff;
+        background-color: #3377aa;
+}
+.db_hot span{
+    font-size: 13px;
+    margin-left: 5px;
+    float: left;
+}
+
+.nohavebg{
+    height: 600px;
+    margin-bottom: 65px;
+}
+.havebg{
+    background-color: #f7f7f7;
+    margin-bottom: 40px;
+}
+
+.nohavebg>div,.havebg>div{
+    position: absolute;
+    width: 950px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+
+
+
+.db_a a{
+    color: #2277aa;
+    line-height: 1.2;
+}
+.db_a a:hover{  
+    background-color:#3377aa;
+    color: #fff;
+}
+.db_a dl{
+    width: 100px;
+    margin-right: 25px;
+}
+.db_a dl dt{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.db_a dl dd{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
